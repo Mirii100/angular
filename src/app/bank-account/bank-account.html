@@ -1,1 +1,28 @@
-<p>bank-account works!</p>
+<div class="grid-table">
+    <div class="thread">
+        <div class="tr">
+            <div class="td">Account No</div>
+            <div class="td">Account holder name</div>
+            <div class="td">bank</div>
+            <div class="td">IFSC</div>
+
+        </div>
+    </div>
+    <div class="tbody">
+        <form action="" class="tr" [formGroup]="fg" *ngFor="let fg of forms">
+            <div class="td">
+                <input type="text" class="form-control" formControlName="accountNumber">
+            </div>
+             <div class="td">
+                <input type="text" class="form-control" formControlName="accountHolder">
+            </div>
+             <div class="td">
+                <input type="text" class="form-control" formControlName="bankID">
+            </div>
+             <div class="td">
+                <input type="text" class="form-control" formControlName="IFSC">
+            </div>
+           
+        </form>
+    </div>
+</div>
